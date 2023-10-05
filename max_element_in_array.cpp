@@ -1,11 +1,21 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 
 int main () {
-    int array[]={1,2,3,4,5};
-    
+    vector <int> array;
+    //taking array input
+    int n ;
+    cout<<"Enter the number of elements in array: ";
+    cin>>n;
+    for (int i=0; i<n; i++) {
+        int ele;
+        cout<<"Enter element: ";
+        cin>>ele;
+        array.push_back(ele);
+    }
     int max=array[0];
-    for (int i=0;i<5; i++) {
+    for (int i=0;i<n; i++) {
         if (array[i]>max) {
             max = array[i];
         }

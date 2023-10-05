@@ -18,7 +18,7 @@ int main() {
 
     for (int i=0; i<n; i++) {
         if (r==array[i]) {
-            cout<<r<<" is present in "<<i<<"th index"<<endl;
+            cout<<r<<" is present in "<<(i+1)<<"th index"<<endl;
             break;
         }
         else if (i==n) {
